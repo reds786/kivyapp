@@ -1,4 +1,10 @@
 #:kivy 1.0
+<MyBigButton@Button>:
+    text_size: self.size
+    font_size: '25sp'
+    markup: True
+
+
 
 <Controller>:
     label_wid: my_custom_label
@@ -14,3 +20,13 @@
         Label:
             id: my_custom_label
             text: 'My label before button press'
+
+
+        MyBigButton:
+            text: "Hello world, watch this text wrap inside the button"
+        MyBigButton:
+            text: "Even absolute is relative to itself"
+        MyBigButton:
+            text: "repeating the same thing over and over in a comp = fail"
+
+
